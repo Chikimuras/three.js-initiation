@@ -34,7 +34,10 @@
             //Creating the geometry properties
             var geometry = new THREE.BoxGeometry(8, 2, 1);
             //Set the texture
-            var material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+            var material = new THREE.MeshBasicMaterial({
+                color: 0x00ff00,
+                border: 0x000000
+            });
             //Create the object
             var cube = new THREE.Mesh(geometry, material);
 
